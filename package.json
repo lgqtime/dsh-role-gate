@@ -1,0 +1,64 @@
+{
+  "name": "dsh-role-gate",
+  "version": "0.1.0",
+  "description": "Per-session identity layer for DeepSeek Harness: tool/skill allowlists, multi-parent inheritance, dynamic switching, and a new-session picker.",
+  "license": "MIT",
+  "author": "lgqtime",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgqtime/dsh-role-gate.git"
+  },
+  "homepage": "https://github.com/lgqtime/dsh-role-gate#readme",
+  "bugs": {
+    "url": "https://github.com/lgqtime/dsh-role-gate/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "identity",
+    "permissions",
+    "tools",
+    "skills",
+    "session"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "src",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": "^0.2.1-rc.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "node --test test/*.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# awesome-dsh-plugin 上架材料
+
+## PR 文件
+
+将 `market/lgqtime__dsh-role-gate.yml` 复制到 awesome-dsh-plugin 仓库的：
+
+```text
+data/plugins/lgqtime__dsh-role-gate.yml
+```
+
+不要手工编辑 README，目录会由 `data/plugins/*.yml` 生成。
+
+## PR 标题
+
+```text
+Add dsh-role-gate
+```
+
+## PR 正文
+
+```markdown
+## What
+
+Adds RoleGate, a per-session identity layer for DSH: tool/skill allowlists,
+multi-parent identity inheritance, one-click switching, and a new-session picker.
+Identities are persisted per session; subagents and forks inherit the parent
+identity; a `draft` flag is an advisory badge only.
+
+## Links
+
+- Repo: https://github.com/lgqtime/dsh-role-gate
+- npm: https://www.npmjs.com/package/dsh-role-gate
+
+## Checks
+
+- `dsh.bundle` + `cordis.patch.yml` present in `package.json`
+- `node --test test/*.test.mjs` — 31/31 passing
+- Tested on DSH 0.2.1-rc.2
+- Public repo with the `dsh-plugin` topic
+```
+
+## 提交前检查
+
+- 仓库创建已满 1 天（CI 自动检查）。
+- GitHub 仓库已添加 `dsh-plugin` topic。
+- 仓库是 public，且 `package.json` 中 `dsh.bundle` 与 `cordis.patch.yml` 存在。
+- npm 包已发布（可选；发布后市场优先走 npm）。
+- 描述与实际代码一致，不使用营销词。

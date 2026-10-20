@@ -1,0 +1,19 @@
+# RoleGate identity layer.
+#
+# The row is inserted by this bundle patch. If the composed profile persists the
+# row into cordis.yml, the insert is emptied to an array (see README) so the
+# plugin is never loaded twice.
+- insert:
+    - id: role-gate
+      name: dsh-role-gate
+      config:
+        defaultIdentity: null
+        webTools:
+          - web_search
+          - web_fetch
+        allowWebFallbackByDefault: true
+        enforceSkills: true
+        sectionOrder: 450
+        maxInstructionsChars: 16000
+        maxResolvedInstructionsChars: 32000
+        maxStateEntries: 500

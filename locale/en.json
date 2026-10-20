@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "RoleGate",
+    "description": "A per-session identity layer for tool/skill capability sets and behavior instructions, with multi-parent inheritance, live switching, and local capability discovery."
+  }
+}

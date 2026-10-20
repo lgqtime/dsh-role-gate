@@ -1,0 +1,6 @@
+url: https://github.com/lgqtime/dsh-role-gate
+name: lgqtime/dsh-role-gate
+category: security
+description:
+  en: 'Per-session identity layer for DeepSeek Harness: tool and skill allowlists, multi-parent inheritance, one-click switching, and a new-session picker.'
+  zh: '为 DeepSeek Harness 提供按会话的身份层：工具与技能白名单、多父继承、一键切换，以及新会话身份选择器。'

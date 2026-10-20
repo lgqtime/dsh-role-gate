@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="RoleGate">
+  <defs>
+    <linearGradient id="rg-bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f7df6"/>
+      <stop offset="1" stop-color="#1d3f9e"/>
+    </linearGradient>
+    <linearGradient id="rg-arc" x1="20" y1="20" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfe0ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#rg-bg)"/>
+  <path d="M18 46V30a14 14 0 0 1 28 0v16" fill="none" stroke="url(#rg-arc)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M13 46h38" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="32" cy="31" r="4.5" fill="#ffffff"/>
+  <path d="M32 35.5V42" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+</svg>
