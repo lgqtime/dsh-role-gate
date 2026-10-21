@@ -46,5 +46,5 @@ identity; a `draft` flag is an advisory badge only.
 - 仓库创建已满 1 天（CI 自动检查）。
 - GitHub 仓库已添加 `dsh-plugin` topic。
 - 仓库是 public，且 `package.json` 中 `dsh.bundle` 与 `cordis.patch.yml` 存在。
-- npm 包已发布（可选；发布后市场优先走 npm）。
+- npm 可选：未发布也能上架，市场会回退到 GitHub Release tarball 或源码安装。
 - 描述与实际代码一致，不使用营销词。
