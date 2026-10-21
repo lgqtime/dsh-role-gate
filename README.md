@@ -22,10 +22,13 @@
 
 ## 安装
 
-从插件市场安装，或直接：
+在 DSH 插件市场搜索 `dsh-role-gate` 一键安装。当前为 GitHub-only 发布，npm 暂未上架。
+
+或从源码安装：
 
 ```sh
-dsh plugin --profile web add dsh-role-gate
+git clone https://github.com/lgqtime/dsh-role-gate.git
+dsh plugin --profile web add ./dsh-role-gate
 ```
 
 本地开发时以 bundle 形式安装进当前 profile：

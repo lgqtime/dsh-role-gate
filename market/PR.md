@@ -29,7 +29,7 @@ identity; a `draft` flag is an advisory badge only.
 ## Links
 
 - Repo: https://github.com/lgqtime/dsh-role-gate
-- npm: https://www.npmjs.com/package/dsh-role-gate
+- npm: not published (GitHub-only install; npm 2FA unavailable)
 
 ## Checks
 
@@ -37,6 +37,8 @@ identity; a `draft` flag is an advisory badge only.
 - `node --test test/*.test.mjs` — 31/31 passing
 - Tested on DSH 0.2.1-rc.2
 - Public repo with the `dsh-plugin` topic
+- GitHub Actions `test` passes
+- GitHub source install verified (pure JS, no build step)
 ```
 
 ## 提交前检查
