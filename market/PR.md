@@ -29,6 +29,7 @@ identity; a `draft` flag is an advisory badge only.
 ## Links
 
 - Repo: https://github.com/lgqtime/dsh-role-gate
+- Release: https://github.com/lgqtime/dsh-role-gate/releases/tag/v0.1.0
 - npm: not published (GitHub-only install; npm 2FA unavailable)
 
 ## Checks
