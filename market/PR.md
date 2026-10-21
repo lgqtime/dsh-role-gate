@@ -38,7 +38,7 @@ identity; a `draft` flag is an advisory badge only.
 - Tested on DSH 0.2.1-rc.2
 - Public repo with the `dsh-plugin` topic
 - GitHub Actions `test` passes
-- GitHub source install verified (pure JS, no build step)
+- Pure JS, no build step; GitHub source install supported
 ```
 
 ## 提交前检查
